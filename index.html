@@ -6,127 +6,108 @@
 <title>For Anney ❤️</title>
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%}
+html{scroll-behavior:smooth}
 body{
-  min-height:100vh;display:flex;justify-content:center;align-items:center;
-  padding:18px;overflow-x:hidden;
-  font-family:Georgia,"Times New Roman",serif;color:#681d2b;
-  background:radial-gradient(circle at 20% 10%,#fff5f0,transparent 30%),
-             radial-gradient(circle at 80% 90%,#ffd9d8,transparent 32%),
-             linear-gradient(135deg,#f7d8d2,#fff3e9);
+  margin:0; min-height:100vh; padding:14px;
+  display:flex; justify-content:center;
+  font-family:Georgia,"Times New Roman",serif;
+  color:#681d2b;
+  background:
+    radial-gradient(circle at 15% 5%,#fff8f3,transparent 30%),
+    radial-gradient(circle at 85% 90%,#ffd9dc,transparent 35%),
+    linear-gradient(135deg,#f8d8d2,#fff2e7);
+  overflow-x:hidden;
 }
-.heart{position:fixed;pointer-events:none;font-size:22px;opacity:0;
-animation:float 8s linear infinite;z-index:0}
-.h1{left:8%;animation-delay:0s}.h2{left:25%;animation-delay:2s}
-.h3{left:52%;animation-delay:4s}.h4{left:75%;animation-delay:1s}
-.h5{left:90%;animation-delay:3s}
-@keyframes float{0%{transform:translateY(105vh) rotate(0);opacity:0}
-15%,85%{opacity:.65}100%{transform:translateY(-15vh) rotate(25deg);opacity:0}}
-.wrap{width:min(940px,100%);text-align:center;position:relative;z-index:2}
-.screen{animation:appear .9s ease both}
-.hidden{display:none!important}
-h1{font-size:clamp(34px,8vw,64px);font-style:italic;font-weight:500;margin:5px 0}
-.subtitle{font-size:clamp(16px,3vw,20px);margin:8px 0 22px}
-.envelope{
-  width:min(92vw,560px);margin:0 auto;padding:42px 25px;
-  border-radius:28px;background:rgba(255,250,246,.9);
-  border:1px solid #e7c7bc;box-shadow:0 25px 70px rgba(83,25,34,.22);
-}
-.envelope .big{font-size:75px;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{50%{transform:scale(1.08)}}
-button{
-  border:0;padding:15px 29px;border-radius:999px;font-size:17px;
-  font-family:inherit;color:#fff;background:linear-gradient(135deg,#7e2030,#ad3949);
-  box-shadow:0 10px 25px rgba(104,29,43,.25);cursor:pointer;
-}
+.wrap{width:min(880px,100%);position:relative;z-index:2}
+.header{text-align:center;margin:8px 0 18px}
+.header h1{font-size:clamp(34px,8vw,60px);font-weight:500;font-style:italic;margin:0}
+.header p{font-size:clamp(15px,3vw,19px);margin:6px 0 0}
 .card{
-  background:rgba(255,255,255,.65);padding:8px;border-radius:24px;
-  box-shadow:0 25px 70px rgba(83,25,34,.22);
-  border:1px solid rgba(125,55,65,.16)
+  background:rgba(255,255,255,.72);padding:7px;border-radius:25px;
+  box-shadow:0 24px 70px rgba(80,25,35,.23);
+  border:1px solid rgba(125,55,65,.16);
 }
-.card img{display:block;width:100%;height:auto;border-radius:17px}
-.message{
-  margin:20px auto 0;max-width:760px;padding:25px 22px;
-  border-radius:22px;background:rgba(255,250,245,.96);
-  border:1px solid #e4c2b8;box-shadow:0 15px 35px rgba(80,25,30,.12)
+.card img{display:block;width:100%;height:auto;border-radius:18px}
+.letter{
+  margin:20px auto 0; max-width:770px; padding:27px 23px;
+  background:rgba(255,250,245,.97); border:1px solid #e4c2b8;
+  border-radius:22px; box-shadow:0 14px 38px rgba(80,25,35,.13);
+  text-align:center;
 }
-.message p{font-size:clamp(17px,3.3vw,22px);line-height:1.75;margin:10px 0}
-.message .love{font-size:clamp(24px,5vw,36px);font-style:italic}
-.signature{font-size:23px;font-style:italic;font-weight:bold;margin-top:18px}
+.letter p{
+  margin:12px 0; font-size:clamp(17px,3.3vw,22px); line-height:1.8;
+}
+.letter .love{font-size:clamp(25px,5vw,37px);font-style:italic}
+.signature{font-size:24px;font-style:italic;font-weight:bold;margin-top:21px}
 .final{
-  margin-top:25px;padding:28px 18px;border-radius:24px;
-  background:linear-gradient(135deg,#fff8f0,#ffe0dc);
-  border:1px solid #e6bdb4;box-shadow:0 15px 40px rgba(80,25,30,.14)
+  margin:20px auto 4px; padding:25px 15px; text-align:center;
+  border-radius:23px; background:linear-gradient(135deg,#fff8ef,#ffe0dc);
+  border:1px solid #e4b9b0; box-shadow:0 14px 38px rgba(80,25,35,.13)
 }
-.final h2{font-size:clamp(30px,7vw,52px);margin:5px 0;font-style:italic}
-.final p{font-size:18px;margin:8px}
-.small{font-size:13px;opacity:.55;margin-top:13px}
-@keyframes appear{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@media(max-width:600px){body{padding:10px}.card{padding:5px}.card img{border-radius:14px}
-.message{padding:20px 16px}.envelope{padding:34px 18px}}
+.final .hearts{font-size:31px}
+.final h2{font-size:clamp(29px,7vw,50px);font-style:italic;margin:7px 0}
+.final p{font-size:18px;margin:7px 0}
+.footer{text-align:center;font-size:13px;opacity:.55;margin:12px 0}
+.heart{
+  position:fixed;top:-30px;pointer-events:none;font-size:21px;opacity:0;
+  animation:fall 9s linear infinite;z-index:1
+}
+.a{left:7%;animation-delay:0s}.b{left:23%;animation-delay:2s}
+.c{left:47%;animation-delay:4s}.d{left:72%;animation-delay:1s}
+.e{left:90%;animation-delay:3s}
+@keyframes fall{
+  0%{transform:translateY(-10vh) rotate(0);opacity:0}
+  15%{opacity:.7}85%{opacity:.7}
+  100%{transform:translateY(115vh) rotate(30deg);opacity:0}
+}
+@media(max-width:600px){
+  body{padding:9px}.card{padding:5px}.card img{border-radius:14px}
+  .letter{padding:21px 16px}
+}
 </style>
 </head>
 <body>
-<div class="heart h1">❤️</div><div class="heart h2">💕</div>
-<div class="heart h3">💗</div><div class="heart h4">❤️</div><div class="heart h5">💖</div>
+<div class="heart a">❤️</div><div class="heart b">💕</div>
+<div class="heart c">💗</div><div class="heart d">❤️</div><div class="heart e">💖</div>
 
 <main class="wrap">
+  <header class="header">
+    <h1>For Anney ❤️</h1>
+    <p>A little surprise from your Kutty thangachi 🎀</p>
+  </header>
 
-  <!-- Opening screen -->
-  <section id="cover" class="screen">
-    <div class="envelope">
-      <div class="big">💌</div>
-      <h1>For Anney ❤️</h1>
-      <div class="subtitle">I made a little surprise just for you 🎀</div>
-      <button onclick="openSurprise()">Open your surprise 💖</button>
-    </div>
+  <!-- Pink PNG card -->
+  <div class="card">
+    <img src="pink-card.png" alt="Beautiful pink Rakhi card">
+  </div>
+
+  <!-- Personal letter -->
+  <section class="letter">
+    <p class="love">I love you, En Anney, and always will. ❤️</p>
+
+    <p>
+      I'm so grateful for choosing De Dyne Patrick class.
+      It will always be the best decision of my life. ❤️
+    </p>
+
+    <p>
+      Thank you for being such an amazing Anney.
+      I'm so lucky to have you in my life.
+      No matter how much time passes, I'll always be your
+      <strong>Kutty thangachi</strong>. ❤️
+    </p>
+
+    <div class="signature">Your Kutty thangachi 🎀❤️</div>
   </section>
 
-  <!-- Surprise: the card -->
-  <section id="surprise" class="screen hidden">
-    <h1>I love you, En Anney ❤️</h1>
-    <div class="subtitle">A little Rakhi surprise from your Kutty thangachi 🎀</div>
-
-    <div class="card">
-      <img src="rakhi-card.png" alt="Beautiful Rakhi card">
-    </div>
-
-    <div class="message">
-      <p class="love">I love you, En Anney, and always will. ❤️</p>
-
-      <p>
-        I can't believe it's one year since I met you.
-        You came into my life and made it so much more beautiful.
-        One year of memories, laughs, little moments, and a bond
-        that means so much to me. 💕
-      </p>
-
-      <p>
-        Thank you for being such an amazing Anney.
-        I'm so lucky to have you in my life.
-        No matter how much time passes, I'll always be your
-        <strong>Kutty thangachi</strong>. ❤️
-      </p>
-
-      <div class="signature">Your Kutty thangachi 🎀❤️</div>
-    </div>
-
-    <div class="final">
-      <div style="font-size:34px">❤️ 🎀 ❤️</div>
-      <h2>Happy Raksha Bandhan!</h2>
-      <p>Always and forever, Anney. ❤️</p>
-    </div>
-
-    <div class="small">Made with love, just for you ❤️</div>
+  <!-- Final message -->
+  <section class="final">
+    <div class="hearts">❤️ 🎀 ❤️</div>
+    <h2>Happy Raksha Bandhan!</h2>
+    <p>Always and forever, Anney. ❤️</p>
   </section>
+
+  <div class="footer">Made with love, just for you ❤️</div>
 </main>
-
-<script>
-function openSurprise(){
-  document.getElementById("cover").classList.add("hidden");
-  document.getElementById("surprise").classList.remove("hidden");
-  window.scrollTo({top:0,behavior:"smooth"});
-}
-</script>
 </body>
 </html>
